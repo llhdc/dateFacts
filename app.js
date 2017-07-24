@@ -1,7 +1,7 @@
 const chalk = require('chalk');
 const moment = require('moment');
 
-let line1 = chalk.blue(moment().day(1).format("dddd, MMMM Do YYYY, h:mm:ss a"));
+let line1 = chalk.blue(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
 let line2 = chalk.magenta(moment().format("DDDo"));
 let line3 = chalk.cyan(moment().seconds() + moment().minutes() * 60 + moment().hour() * 3600);
 function isDaylightSavingsTime() {
